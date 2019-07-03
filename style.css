@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
+
+html { 
+    background: url(/img/weather.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  #button{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-family: 'Righteous', cursive;
+    background-color: grey;
+    font-size: px;
+    color: #0099CC; 
+    border: 2px solid #0099CC;
+    border-radius: 6px; 
+    border: none;      color: white;      padding: 16px 32px;      text-align: center;      display: inline-block;      font-size: 30px;      margin: 4px 2px;      -webkit-transition-duration: 0.4s; /* Safari */      transition-duration: 0.4s;      cursor: pointer;      text-decoration: none;      text-transform: uppercase;}.btn1 {      background-color: white;       color: black;       border: 2px solid #008CBA;
+  }
+
+  #button:hover {      background-color: #008CBA;      color: rgb(245, 239, 239); }
+
+  #button:active {
+    background-color: #0b32e0;
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
+  }
+
+  #input{
+      position: absolute;
+      top:55%;
+      left: 48%;
+      font-size:25px;
+      font-family: 'Gugi', cursive;
+      padding: 5px 5px;
+  }
+
+#output{
+    padding: 20px 20px;
+    top: 40%;
+    left: 50%;
+    right:50%;
+    font-family: 'Righteous', cursive;
+    font-size: 50px
+}

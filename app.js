@@ -17,7 +17,7 @@ function getWeather(){
   
   let city = document.getElementById('input').value.toUpperCase();
   
-  console.log(input);
+  
   
   fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=${key}`)
   .then((res) => res.json())
@@ -40,7 +40,7 @@ function getWeather(){
       for (let index = 0; index < 5; index++) {
  
   let tempy =data.list[counter].main.temp;
-  newoutput[index].innerHTML = `°C: ${tempy}`
+  newoutput[index].innerHTML = `°C ${tempy}`
   counter +=8
 }
       

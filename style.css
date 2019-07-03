@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
 
 html { 
-    background: url('/img/weather.jpg') no-repeat center center fixed; 
+    background: url('img/weather.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,11 +40,12 @@ html {
       padding: 5px 5px;
   }
 
-#output{
+.output{
     padding: 20px 20px;
     top: 40%;
     left: 50%;
     right:50%;
     font-family: 'Righteous', cursive;
-    font-size: 50px
+    font-size: 50px;
+    color: white;
 }

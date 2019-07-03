@@ -22,18 +22,30 @@ function getWeather(){
   fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=${key}`)
   .then((res) => res.json())
   .then((data)=> {
-    // console.log(data)
-    // console.log(data.list[0].main.temp);
-    
-    let output = "<h1>Temperature</h1>";
-    data.list.forEach(function(get){
+    console.log(data)
+    console.log(data.list[0].main.temp);
+    let output;
+
+    output = `THE TEMPERATUR IN ${city}: <h3>${data.list[0].main.temp}</h3>`;
+
+    // data.forEach(function(get){
       
-       output = `THE TEMPERATUR IN ${city}: <h3>${get.main.temp}</h3>`;
-       output1= ``
+    //    output = `THE TEMPERATUR IN ${city}: <h3>${get.main.temp}</h3>`;
        
-      });
-        document.getElementById('output').innerHTML = output;
-        document.getElementById('output').style.color = 'white';
+       
+    //   });
+      let newoutput = document.getElementsByClassName("output")
+
+      let counter = 0;
+      for (let index = 0; index < 5; index++) {
+ 
+  let tempy =data.list[counter].main.temp;
+  newoutput[index].innerHTML = `°C: ${tempy}`
+  counter +=8
+}
+      
+        // document.getElementById('output').innerHTML = output;
+        // document.getElementById('output').style.color = 'white';
 
       })
 
